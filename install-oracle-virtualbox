@@ -5,6 +5,5 @@
 apt-get update
 apt-get -y install wget
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | apt-key add -
-apt-add-repository -y "deb https://download.virtualbox.org/virtualbox/debian bullseye contrib"
-sudo apt-get update
+apt-add-repository -y -u "deb https://download.virtualbox.org/virtualbox/debian bullseye contrib"
 sudo apt-get -y install virtualbox-6.1
