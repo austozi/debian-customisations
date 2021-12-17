@@ -1,0 +1,7 @@
+#!/bin/bash -e
+# Enable the Adwaita theme for QT applications
+# Run this script as root. Reboot to take effect.
+
+apt-get update
+apt-get -y install qt5-style-plugins qt5-gtk-platformtheme adwaita-qt
+echo "QT_STYLE_OVERRIDE=Adwaita" > /etc/environment
