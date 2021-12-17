@@ -49,3 +49,5 @@ flatpak -y install flathub \
   org.mozilla.firefox \
   org.zotero.Zotero \
   us.zoom.Zoom
+
+pip3 install youtube-dl
