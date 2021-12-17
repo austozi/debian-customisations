@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# Enables a set of core apps on a standard Debian installation.
+# Enables a selection of core apps on a standard Debian installation.
 # Run this script as root.
 
 apt-get -qq update
@@ -39,3 +39,12 @@ apt-get -yy install \
   soundconverter \
   virtualbox \
   virtualbox-guest-additions-iso
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak -y install flathub \
+  com.microsoft.Teams \
+  org.freedesktop.Platform.ffmpeg-full/21.08 \
+  org.jitsi.jitsi-meet \  
+  org.mozilla.firefox \
+  org.zotero.Zotero \
+  us.zoom.Zoom
