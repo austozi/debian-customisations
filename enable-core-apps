@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# Installs a set of core apps on a standard Debian installation.
+# Enables a set of core apps on a standard Debian installation.
 # Run this script as root.
 
 apt-get -qq update
