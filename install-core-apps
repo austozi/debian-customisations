@@ -1,0 +1,39 @@
+#!/bin/bash -e
+
+# Installs a set of core apps on a standard Debian installation.
+# Run this script as root.
+
+apt-get -qq update
+apt-get -yy install \
+  audacity \
+  blender \
+  brasero \
+  clamtk \
+  ffmpeg \
+  filezilla \
+  freecad \
+  gchempaint \
+  gcu-bin \
+  ghostwriter \
+  gimp \
+  gnome-subtitle \
+  homebank \
+  ibus-libpinyin \
+  imagej \
+  inkscape \
+  keepassxc \
+  lame \
+  lyx \
+  mkvtoolnix-gui \
+  musescore3 \
+  nextcloud-desktop \
+  pdfarranger \
+  pitivi \
+  puddletag \
+  r-base \
+  remmina \
+  rhythmbox-plugin-alternative-toolbar \
+  simplescreenrecorder \
+  soundconverter \
+  virtualbox \
+  virtualbox-guest-additions-iso
