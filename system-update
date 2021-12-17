@@ -1,0 +1,28 @@
+#!/bin/bash -e
+echo "Updating APT packages..."
+apt-get -qq update
+apt-get -yy dist-upgrade
+apt-get -yy autoremove --purge
+apt-get -yy autoclean
+
+echo "Updating Flatpak packages..."
+flatpak update
+flatpak -y uninstall --unused
+
+echo "Updating youtube-dl..."
+pip3 install --upgrade youtube-dl
+
+# Loop through user home directories to create font fix
+for userhome in $(ls -d /home/*/); do
+	user=$(basename "$userhome")
+	echo "Fixing Firefox Flatpak fonts for $user..."
+  sudo -u $user mkdir -p $userhome/.var/app/org.mozilla.firefox/config/fontconfig
+	sudo -u $user printf '<?xml version="1.0"?>
+	<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+	<fontconfig>
+    		<!-- Disable bitmap fonts. -->
+    		<selectfont><rejectfont><pattern>
+        	<patelt name="scalable"><bool>false</bool></patelt>
+    		</pattern></rejectfont></selectfont>
+	</fontconfig>' > $userhome/.var/app/org.mozilla.firefox/config/fontconfig/fonts.conf
+done
