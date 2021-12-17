@@ -10,12 +10,14 @@ apt-get -yy install \
   brasero \
   clamtk \
   ffmpeg \
+  flatpak \
   filezilla \
   freecad \
   gchempaint \
   gcu-bin \
   ghostwriter \
   gimp \
+  gnome-software-plugin-flatpak \
   gnome-subtitle \
   homebank \
   ibus-libpinyin \
