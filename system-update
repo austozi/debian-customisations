@@ -16,7 +16,7 @@ pip3 install --upgrade youtube-dl
 for userhome in $(ls -d /home/*/); do
 	user=$(basename "$userhome")
 	echo "Fixing Firefox Flatpak fonts for $user..."
-  sudo -u $user mkdir -p $userhome/.var/app/org.mozilla.firefox/config/fontconfig
+	sudo -u $user mkdir -p $userhome/.var/app/org.mozilla.firefox/config/fontconfig
 	sudo -u $user printf '<?xml version="1.0"?>
 	<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 	<fontconfig>
