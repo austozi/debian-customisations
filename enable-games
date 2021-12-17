@@ -1,0 +1,16 @@
+#!/bin/bash -e
+
+# Enable games. 
+# This is a separate script because I do not want games installed on work computers.
+# Run as root.
+
+apt-get -qq update
+apt-get -yy install \
+  0ad \
+  frogatto \
+  gnome-games \
+  gnome-mastermind \
+  supertux \
+  supertuxkart \
+  unknown-horizons \
+  warzone2100
