@@ -18,7 +18,7 @@ apt-get -yy install \
   ghostwriter \
   gimp \
   gnome-software-plugin-flatpak \
-  gnome-subtitle \
+  gnome-subtitles \
   homebank \
   ibus-libpinyin \
   imagej \
