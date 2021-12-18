@@ -10,8 +10,8 @@ apt-get -yy install \
   brasero \
   clamtk \
   ffmpeg \
-  flatpak \
   filezilla \
+  flatpak \
   freecad \
   gchempaint \
   gcu-bin \
