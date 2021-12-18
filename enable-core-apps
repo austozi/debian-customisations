@@ -44,7 +44,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak -y install flathub \
   com.microsoft.Teams \
   com.prusa3d.PrusaSlicer \
-  org.freedesktop.Platform.ffmpeg-full/21.08 \
+  ffmpeg-full \
   org.jitsi.jitsi-meet \  
   org.mozilla.firefox \
   org.zotero.Zotero \
