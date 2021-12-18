@@ -41,13 +41,6 @@ apt-get -yy install \
   virtualbox-guest-additions-iso
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak -y install flathub \
-  com.microsoft.Teams \
-  com.prusa3d.PrusaSlicer \
-  ffmpeg-full \
-  org.jitsi.jitsi-meet \  
-  org.mozilla.firefox \
-  org.zotero.Zotero \
-  us.zoom.Zoom
+flatpak -y install com.microsoft.Teams com.prusa3d.PrusaSlicer ffmpeg-full org.jitsi.jitsi-meet org.mozilla.firefox org.zotero.Zotero us.zoom.Zoom
 
 pip3 install youtube-dl
